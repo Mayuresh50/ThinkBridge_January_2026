@@ -1,0 +1,23 @@
+{
+	"files.autoSave": "off",
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+
+	"prettier.singleQuote": true,
+	"prettier.semi": true,
+	"prettier.tabWidth": 2,
+	"prettier.trailingComma": "es5",
+
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
