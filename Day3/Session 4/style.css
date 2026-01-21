@@ -1,0 +1,93 @@
+/* Base */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f6f8;
+}
+
+/* ================= HEADER ================= */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px;
+	background-color: #005fcc;
+	color: white;
+}
+
+.brand h1 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.brand p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* Navigation */
+.nav {
+	display: flex;
+	gap: 20px;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+/* Hamburger */
+.menu-btn {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 24px;
+	color: white;
+	cursor: pointer;
+}
+
+/* ================= MAIN LAYOUT ================= */
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 24px;
+}
+
+/* ================= CARDS ================= */
+.card {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+/* ================= PROJECT GRID ================= */
+.card-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card-grid .card {
+	flex: 1 1 250px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+	text-align: center;
+	padding: 16px;
+	background-color: #222;
+	color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 565px) {
+	.nav {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+}
