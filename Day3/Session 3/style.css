@@ -1,0 +1,48 @@
+/* 1. Universal selector*/
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* 2. Element selector  */
+p {
+	color: blue;
+}
+
+/* 3. Class selector  */
+.text {
+	color: green;
+}
+
+/* 4. Multiple class selector  */
+.text.highlight {
+	color: red;
+}
+
+/* 5. ID selector */
+#main-title {
+	color: purple;
+}
+
+/* 6. Inheritance example  */
+.card {
+	color: brown;
+}
+
+/* 7. Box model demonstration */
+.card {
+	padding: 40px;
+	border: 8px solid black;
+	margin: 50px;
+}
+
+/* 8. Cascade example*/
+button {
+	background-color: lightgray;
+}
+
+button {
+	background-color: orange;
+	padding: 10px;
+	border: none;
+}
