@@ -1,0 +1,4 @@
+!
+div.container>header>h1{Welcome}+nav>ul>li*3>a
+section#about>h2{About Us}+p{This is about section}
+form>input:text+input:email+button{Submit}
