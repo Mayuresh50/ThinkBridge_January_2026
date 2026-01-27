@@ -116,6 +116,44 @@
                 </div>
               </section>
             </main>
+            <footer>
+              <p>Created by Mayuresh @ThinkSchool </p>
+            </footer>
+
+            <script>
+
+        //City name with their Timezones
+        const cityTime = {
+            pune: "Asia/Kolkata",
+            singapore: "Asia/Singapore",
+            manila: "Asia/Manila",
+            los_angeles: "America/Los_Angeles",
+            cali: "America/Bogota",
+            atlanta: "America/New_York",
+            london: "Europe/London"
+        }
+
+        //function for updating time 
+        function updateClocks(){
+            const updatedTime = new Date();
+
+            for (const city in cityTime){
+              const timeFormatter = new Intl.DateTimeFormat("en-GB", {
+                  timeZone: cityTime[city],
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  second: "2-digit",
+                  hour12: false
+              });
+              document.getElementById(city).textContent="Time: "+ timeFormatter.format(updatedTime);
+            }
+        }
+        //function call
+        updateClocks();
+
+        //set Interval of One second to update time
+        setInterval(updateClocks, 1000);
+    </script>
             
 </body>
 </html>
