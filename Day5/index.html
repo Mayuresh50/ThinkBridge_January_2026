@@ -3,124 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Clock</title>
+    <title>World Clock 🕓</title>
     <style>
+
         *{
             margin:0px;
             padding: 0px;
             box-sizing: border-box;
         }
+
         body{
-            background-color: linear-gradient(135deg, #cecece, #dc9a9a);
+            background: linear-gradient(130deg,#0f51c4b9,  #2e8b57, #1e90ff);
             color: #333;
         }
+
         header{
+            background-color: #333;
             text-align: center;
-            margin: 10px;
         }
+
         h1{
-            font-size: 2rem;
-            font-weight: bolder;
+            color: aliceblue;
+            font-size: 2.5rem;
         }
+
         main{
             width: 700px;
             margin: 10px auto;
             
         }
+
         .clocks-container{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         } 
-        .card{
-            background-color: rgb(230, 243, 255);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 14px;
-            padding: 25px;
-            margin: 20px;
-            width: 300px;
-            text-align: center;
-        }        
-        .city{
-            font-weight: bolder;
-            margin-bottom: 10px;
-        }        
-        .time{
-            margin-top: 10px;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #02afff;
+        
+        .clock-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+        .card{
+            background : transparent;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+            border-radius: 50%; 
+            padding: 25px; 
+            margin: 20px; 
+            width: 200px; 
+            text-align: center;
+        } 
+
+        .card:hover{
+            transform: scale(1.1);
+            transition: transform 0.4s ease;
+        }   
+        
+        .details{
+            text-align: center;
+            margin-top: 5px;
+            color: #f0f0f0;
+        }
+
+        .city{
+            font-weight: 600;
+        }        
+
+        .time{
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #f8f8f8; 
+            letter-spacing: 2px;
+        }
+
         footer{
             text-align: center;
-            padding: 10px;
-            background-color: #5f5e5e;
-            color: #e6e6e6;
-        } 
+            padding: 15px;
+            background-color: #333;
+            color: #f2f2f2;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        /* responsive design */
+        @media (max-width: 768px) {
+            main{
+                width: 100%;
+                padding: 10px;
+            }
+            .clocks-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>World Clock</h1>
+        <h1>World Clock 🌏</h1>
     </header>
     <main>
-              <section class="clocks-container">
+        <section class="clocks-container">
                 
-                <!--div for Pune -->
+            <!--div for Pune -->
+            <div class="clock-box">
                 <div class="card">
-                    <div class="city">City : Pune</div>
-                    <div>Country : India</div>
                     <div class ="time" id = "pune"> Time : --:--:--</div>
                 </div>
+                <div class="details">
+                    <div class="city">City : Pune</div>
+                    <div>Country : India</div>
+                </div>
+            </div>
 
-                <!--div for Singapore -->
+            <!--div for Singapore -->
+            <div class="clock-box">
                 <div class="card">
+                    <div class ="time" id = "singapore"> Time : --:--:--</div>
+                </div>
+                <div class="details">
                     <div class="city">City : Singapore</div>
                     <div>Country : Singapore</div>
-                    <div class ="time" id="singapore"> Time : --:--:--</div>
                 </div>
+            </div>
 
-                <!--div for Manila -->
+            <!--div for Manila -->
+            <div class="clock-box">
                 <div class="card">
+                    <div class ="time" id = "manila"> Time : --:--:--</div>
+                </div>
+                <div class="details">
                     <div class="city">City : Manila</div>
                     <div>Country : Philippines</div>
-                    <div class ="time" id="manila"> Time : --:--:--</div>
                 </div>
+            </div>
                 
-                <!--div for Los Angeles -->
+            <!--div for Los Angeles -->
+            <div class="clock-box">
                 <div class="card">
+                    <div class ="time" id = "los_angeles"> Time : --:--:--</div>
+                </div>
+                <div class="details">
                     <div class="city">City : Los Angeles</div>
                     <div>Country : USA (CA)</div>
-                    <div class ="time" id="los_angeles"> Time : --:--:--</div>
                 </div>
+            </div>
 
-                <!--div for Cali -->
-                <div class="card"> 
+            <!--div for Cali -->
+            <div class="clock-box">
+                <div class="card">
+                    <div class ="time" id = "cali"> Time : --:--:--</div>
+                </div>
+                <div class="details">
                     <div class="city">City : Cali</div>
                     <div>Country : Colombia</div>
-                    <div class ="time" id="cali"> Time : --:--:--</div>
                 </div>
+            </div>
 
-                <!--div for Atlanta -->
+            <!--div for Atlanta -->
+            <div class="clock-box">
                 <div class="card">
+                    <div class ="time" id = "atlanta"> Time : --:--:--</div>
+                </div>
+                <div class="details">
                     <div class="city">City : Atlanta</div>
                     <div>Country : USA (GA)</div>
-                    <div class ="time" id="atlanta"> Time : --:--:--</div>
                 </div>
-                
-                <!--div for London -->
-                <div class="card">
-                    <div class="city">City : London</div>
-                    <div>Country : UK</div>
-                    <div class ="time" id="london"> Time : --:--:--</div>
-                </div>
-              </section>
-            </main>
-            <footer>
-              <p>Created by Mayuresh @ThinkSchool </p>
-            </footer>
+            </div>
 
-            <script>
+            <!--div for London -->
+            <div class="clock-box">
+                <div class="card">
+                    <div class ="time" id = "london"> Time : --:--:--</div>
+                </div>
+                <div class="details">
+                    <div class="city">City : London</div>
+                    <div>Country : UK </div>
+                </div>
+            </div>
+                
+            </section>
+        </main>
+
+        <footer>
+            <p>Created by Mayuresh Patil @ThinkSchool </p>
+        </footer>
+
+    <script>
 
         //City name with their Timezones
         const cityTime = {
@@ -145,7 +221,7 @@
                   second: "2-digit",
                   hour12: false
               });
-              document.getElementById(city).textContent="Time: "+ timeFormatter.format(updatedTime);
+              document.getElementById(city).textContent=timeFormatter.format(updatedTime);
             }
         }
         //function call
