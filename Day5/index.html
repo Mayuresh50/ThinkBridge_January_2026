@@ -13,46 +13,48 @@
         }
 
         body{
-            background: linear-gradient(130deg,#0f51c4b9,  #2e8b57, #1e90ff);
-            color: #333;
+            background: linear-gradient(125deg, #2c54ba, #2e7070, #188de7);
+            color: #ffffff;
+            min-height: 100vh;
         }
 
         header{
-            background-color: #333;
+            background-color: #2b2b2b;
             text-align: center;
+            padding: 16px 0;
         }
 
-        h1{
-            color: aliceblue;
-            font-size: 2.5rem;
+        header h1{
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: #f2f2f2;
         }
 
         main{
             width: 700px;
-            margin: 10px auto;
-            
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         .clocks-container{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
         } 
         
         .clock-box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 18px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .card{
-            background : transparent;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-            border-radius: 50%; 
-            padding: 25px; 
-            margin: 20px; 
-            width: 200px; 
-            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 24px 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
         } 
 
         .card:hover{
@@ -61,9 +63,11 @@
         }   
         
         .details{
+            font-weight: bold;
+            margin-top: 8px;
             text-align: center;
-            margin-top: 5px;
-            color: #f0f0f0;
+            color: #393939;
+            font-size: 0.9rem;
         }
 
         .city{
@@ -71,35 +75,38 @@
         }        
 
         .time{
-            font-size: 2.4rem;
-            font-weight: bold;
-            color: #f8f8f8; 
-            letter-spacing: 2px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0f51c4;
         }
 
         footer{
+            margin-top: 20px;
             text-align: center;
             padding: 15px;
             background-color: #333;
             color: #f2f2f2;
-            font-size: 0.9rem;
-            opacity: 0.85;
+            font-size: 0.85rem;
         }
 
         /* responsive design */
         @media (max-width: 768px) {
             main{
-                width: 100%;
-                padding: 10px;
+                width: 80%;
+                margin: 25px auto;
+                padding: 0px 15px;
             }
             .clocks-container {
-                display: flex;
-                flex-direction: column;
+                grid-template-columns: 1fr;
+                gap:25px;
             }
 
             .card {
                 width: 100%;
-                margin: 0;
+                padding: 22px;
+            }
+            .time{
+                font-size: 2.2rem;
             }
         }
 
