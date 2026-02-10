@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Day_16_Azure_function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7285",
+      "launchBrowser": false
+    }
+  }
+}
