@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ky8pdp2JorE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mayuresh\\OneDrive\\Desktop\\ThinkBridge_January_2026\\Day 18\\AuthApp\\AuthApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\dotenv.net\\4.0.0\\dotenv.net.4.0.0.nupkg.sha512",
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\microsoft.identity.client\\4.82.1\\microsoft.identity.client.4.82.1.nupkg.sha512",
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Mayuresh\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
